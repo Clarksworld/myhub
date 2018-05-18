@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.v7.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+
+    <RelativeLayout
+        android:layout_margin="3dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="#63ced6d4">
+        <alpha
+            android:fromAlpha="0.0"
+            android:toAlpha="1.0"/>
+        <ImageView
+            android:id="@+id/imageview"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            tools:src="@drawable/family_daughter" />
+
+
+        <TextView
+            android:id="@+id/tv_englsih"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="30dp"
+            android:layout_toRightOf="@id/imageview"
+            android:layout_marginTop="15dp"
+            android:textSize="20sp"
+            android:fontFamily="sans-serif-smallcaps"
+            tools:text="ngwa" />
+        <TextView
+            android:id="@+id/tv_obolo"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_toRightOf="@id/imageview"
+            android:layout_marginLeft="30dp"
+            android:layout_below="@id/tv_englsih"
+            android:fontFamily="sans-serif-smallcaps"
+            android:textSize="20sp"
+            android:layout_marginTop="15dp"
+            tools:text="brother"/>
+        <Button
+            android:id="@+id/card_button"
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            android:fitsSystemWindows="true"
+            android:layout_alignParentRight="true"
+            android:layout_marginRight="30dp"
+            android:layout_marginTop="25dp"
+            android:background="@drawable/ic_play_circle_outline_black_24dp"/>
+
+
+    </RelativeLayout>
+
+</android.support.v7.widget.CardView>
